@@ -1,0 +1,6 @@
+﻿<asp:TextBox runat="server" 
+                BackColor="#990033"
+                BorderColor="red" 
+                BorderStyle="solid" 
+                BorderWidth="12px" 
+                ForeColor="White"></asp:TextBox>

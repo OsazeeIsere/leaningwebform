@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MaterPage.master.cs" Inherits="leaningwebform.MasterPageDemo.MaterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border: 6px solid #FF0000;
+            background-color: #00FFFF;
+        }
+        .auto-style2 {
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           
+            <table class="auto-style1">
+                <tr>
+                    <td>
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/NOZEME_LOGOS.jpg2.jpg" />
+                    </td>
+                    <td>
+                        <asp:Image ID="Image2" runat="server" Height="77px" ImageAlign="Right" ImageUrl="~/Image/OZ.LOGO3.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2" colspan="2">&nbsp;</td>
+                </tr>
+            </table>
+           
+        </div>
+    </form>
+</body>
+</html>

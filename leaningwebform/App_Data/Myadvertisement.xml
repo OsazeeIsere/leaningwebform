@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<advertisement>
+  <Ad>
+    <ImageUrl>~/Image/OZ.LOGO3.png</ImageUrl>
+    <NavigateUrl>~/standardcontroldemo/checkboxexamples.aspx</NavigateUrl>
+    <AlternateTeext>Logo</AlternateTeext>
+    
+    <Impression>100</Impression>
+  </Ad>
+</advertisement>

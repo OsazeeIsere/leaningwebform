@@ -1,0 +1,75 @@
+1:In order to add Menu at runtime, creat new xml file on App_Data folder and customise ur menus
+then add xmldatasourse control and configure it to see ur xml file.
+then bind ur menu control to this data source
+then on the menu, select: Edit menuitem databinding and add both the contrloType and Control.
+then in the textfield select Name for both contrloType and Control. next select url for the control
+
+2: Tree veiw works like menu cotrols. if u want the category to be colapsing, set Expanded.
+To also add nodes to tree at runtime, do what we did for menu above.
+
+3: to add sitemap to app, click on solution file then add new item. as you try to type site on the search textbox on a proxy 
+template the sitmap pop out itself. click on site map for c# and leave the name as web.sitmap,click ok.
+sitemap should not have a duplicate url. Unlike xml file where deleloper define their own variable, in sitemap, we have key words.
+After structuring the sitemap, open a web form called say "testsitemap".on the form add a tree view control and a sitemapedatasource control.
+Dont confifure bcos by default its already bind to the web.sitmap file created. Just bind the tree menu to the sitemapdatasourse control added.
+If u want the sitemapPath to be clickable, set the sitemap session url to a link
+
+4: Ajax Controls help to suppress or hide Postback functionality of a control. its makes this postback to happen at the background while
+ u continue with the page then present the result on the page when ready. Simply put the form inside a control called:UpdatePanel. to make 
+the user relax and sure thst the action is on at the background put a control:updateprogress
+
+5: if we to timer_tick event handle to display inside a wed browser, we type on title tag on the file with Ajax functionailty
+<title id="myTitle" runat="sever". then target this in the timer control on the c# code.i.e myTitle.text=label5.text
+6:viewstate as one of the data persistent control has a page level scope. the value rmain throughout for all the functions on that page.
+the value is lost when u leave the page.
+NOTE: while the viewstate has the scope of page level the session object has the scope of site level. session data is basically unique to each 
+user. value is the same on the same browser diff tab but different in anothe browser as this is seen as anothetr user.
+Session: in oeder to keep the unique names of all the session variable, create a class to store all these variables. open a defau;lt folder
+called APP_code inside ASP.Net Folder.U can store all classes here.
+create a private string variable, right click on the variable and select refraction and attonation and pick the first option.
+A public method will be generated. remove ur private variable name and put:=> HttpContext.Current.Session["sess_userName"].ToString(); 
+set => HttpContext.Current.Session["sess_userName"] = value; 
+
+7: the period of time a user logs into a site and stays on it is called a session
+8: Cookies: while session variables are stored in the server memory, cookies are stored in the client or visitors' hard disk. we have both 
+temporary and persistent cpookies. when a temp. cookie is created, it can be used any where in the site so long as the browser is not closed.
+9 Another data persistent technique is the used of application objects. 
+NOTE: Diff while session variables are uniqu to each user of the site, application objects are common to all users of the site.
+ variable that u know all users we need. they stored in in a special file known as Global.aspx. so add this file as u did with App_Code.
+Value Application variable are never lost as long server is not restarted.
+10 another data persistent technique: url querystring. u need it passing data btw page. But dont pass both large and confidentil info
+as it is visible in the address bar.check DPExamle.aspx
+
+11: creating a stored procedure: CREATE PROCEDURE uspUserDetailInsert
+(
+@userName varchar(50),
+@passWord varchar(50),
+@country varchar(50),
+@email varchar(50)
+
+
+
+)
+AS
+BEGIN
+
+INSERT INTO userDetails(userName,password,country,email) VALUES(@userName,@passWord,@country,@email)
+
+END
+
+12: test a procedure on ssms: EXECUTE [procedure name] 'values1','value2' then execute
+
+13: Note: For a class in app_Code to be visible, right click on the class and set build action to compile
+
+14: to create membership control, open developer prompt and type:aspnet_regsql and press enter. then follow the window instruction
+
+
+
+
+
+
+
+
+
+
+

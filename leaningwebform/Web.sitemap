@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="ASPNetTraining"  description="">
+
+    <siteMapNode url="" title ="Standard Controls" description="">
+      <siteMapNode url="~/standardcontroldemo/textboxexample.aspx" title="Text Box"  description=""/>
+      <siteMapNode url="~/standardcontroldemo/checkboxexample.aspx" title="Check Box"  description=""/>
+      <siteMapNode url="~/standardcontroldemo/radiobuttonexample.aspx" title="Radio Button"  description=""/>
+      <siteMapNode url="~/standardcontroldemo/checkboxlistexample.aspx" title="Check Box List"  description=""/>
+        </siteMapNode>
+
+
+    <siteMapNode url="" title ="Data Controls" description="">
+      <siteMapNode url="~/dataBoundControlDemo/gridViewExample.aspx" title="Grid View"  description=""/>
+      <siteMapNode url="~/dataBoundControlDemo/detailViewExample.aspx" title="Detail View"  description=""/>
+      <siteMapNode url="~/dataBoundControlDemo/listViewExample.aspx" title="List View"  description=""/>
+      <siteMapNode url="~/dataBoundControlDemo/repeaterExample.aspx" title="Repeater"  description=""/>
+    </siteMapNode>
+
+    <siteMapNode url="" title ="Rich Controls" description="">
+      <siteMapNode url="~/standardcontroldemo/calenderExample.aspx" title="Calender"  description=""/>
+      <siteMapNode url="~/standardcontroldemo/addrotatorexample.aspx" title="Rotator"  description=""/>
+       </siteMapNode>
+    
+  </siteMapNode>
+</siteMap>

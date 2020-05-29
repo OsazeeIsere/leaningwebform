@@ -1,0 +1,20 @@
+﻿<asp:TextBox runat="server" 
+                BackColor="#990033"
+                BorderColor="Yellow" 
+                BorderStyle="Double" 
+                BorderWidth="5px" 
+                ForeColor="White"></asp:TextBox>
+ <asp:Button  runat="server" 
+                BackColor="#CC6699" 
+                BorderColor="Lime" 
+                BorderStyle="Groove" 
+                BorderWidth="6px" 
+                ForeColor="White"
+                Text="Button" 
+                Width="123px" />
+<asp:TextBox SkinID ="skinDemo" runat="server"
+                BackColor="blue"
+                BorderColor="Yellow" 
+                BorderStyle="Double" 
+                BorderWidth="5px" 
+                ForeColor="White"></asp:TextBox>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ASPNetTraining>
+  <ControlType Name="Standa~/standardcontroldemo/addrotatorexample.aspxndard Controls">
+    <Control Name="Text Box" Url="~/standardcontroldemo/textboxexample.aspx"></Control>
+    <Control Name="Check Box" Url="~/standardcontroldemo/checkboxexample.aspx"></Control>
+    <Control Name="Radio Button" Url="~/standardcontroldemo/radiobuttonexample.aspx"></Control>
+    <Control Name="Check Box List" Url="~/standardcontroldemo/checkboxlistexample.aspx"></Control>
+ </ControlType>
+  
+  <ControlType Name="DataControls">
+    <Control Name="Grid View" Url="~/dataBoundControlDemo/gridViewExample.aspx"></Control>
+    <Control Name="Detail View" Url="~/dataBoundControlDemo/detailViewExample.aspx"></Control>
+    <Control Name="List View" Url="~/dataBoundControlDemo/listViewExample.aspx"></Control>
+    <Control Name="Repeater" Url="~/dataBoundControlDemo/repeaterExample.aspx"></Control>
+  </ControlType>
+
+  <ControlType Name="RichControls">
+    <Control Name="Calender" Url="~/standardcontroldemo/calenderExample.aspx"></Control>
+    <Control Name="Rotator" Url=""></Control>
+      </ControlType>
+  
+</ASPNetTraining>
